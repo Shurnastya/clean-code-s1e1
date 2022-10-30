@@ -8,19 +8,20 @@ body {
 .head {
     width: 500px;
     margin: 0 auto;
+    padding-bottom: 15px;
     display: block;
     text-align: right;
 }
 
-.head img {
+.todo__list {
     width: 100%;
 }
 
-.head .more-info {
+.head .more__info {
     font-family: fantasy, cursive;
 }
 
-.centered-main-page-element {
+.main__todo {
     display: block;
     width: 500px;
     margin: 0 auto;
@@ -32,8 +33,9 @@ body {
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task__wrapper {
     display: flex;
+    padding-bottom: 15px;
 }
 
 ul {
@@ -41,11 +43,13 @@ ul {
     padding: 0px;
 }
 
-li, h3 {
+li,
+h3 {
     list-style: none;
 }
 
-input, button{
+input,
+button {
     outline: none;
 }
 
@@ -64,8 +68,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.head__tasks {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -93,7 +96,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+.head__tasks {
     display: block;
     margin: 0 0 20px;
 }
@@ -131,13 +134,13 @@ li > input[type="text"] {
     width: 226px;
 }
 
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button .delete img:hover {
+.delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -152,18 +155,18 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li .editMode input[type=text] {
+ul li .edit__mode input[type="text"] {
     display: inline-block;
     width: 224px;
 }
 
-ul li .editMode label {
+ul li .edit__mode label {
     display: none;
 }
 
 @media (max-width: 768px) {
 
-    .aaa { 
+    .head { 
         text-align: center;
     }
 
